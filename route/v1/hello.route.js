@@ -1,7 +1,7 @@
-const express = require('express');
+const express = require("express");
 const router = express.Router();
 
-const helloController = require('../../controller/hello.controller.js');
+const helloController = require("../../controller/hello.controller.js");
 
 /**
  * @openapi
@@ -14,6 +14,6 @@ const helloController = require('../../controller/hello.controller.js');
  *       200:
  *         description: API is running
  */
-router.get('/',  helloController.hello);
+router.get("/", helloController.hello);
 
 module.exports = router;
